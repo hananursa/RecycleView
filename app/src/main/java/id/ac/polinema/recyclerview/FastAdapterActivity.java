@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import id.ac.polinema.recyclerview.models.TeamItem;
+import id.ac.polinema.recyclerview.models.TeamLogo;
 
 public class FastAdapterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,8 @@ public class FastAdapterActivity extends AppCompatActivity {
         List teams = new ArrayList<>();
         teams.add(new TeamItem("https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/360px-Liverpool_FC.svg.png", "Liverpool"));
         teams.add(new TeamItem("https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/360px-Manchester_City_FC_badge.svg.png", "Man. City"));
+        teams.add(new TeamItem("https://upload.wikimedia.org/wikipedia/hif/8/82/Arsenal_FC.png", "Arsenal"));
+        teams.add(new TeamItem("https://upload.wikimedia.org/wikipedia/id/8/8b/Real_Madrid_Club_de_Fútbol.png", "Real Madrid"));
 
         itemAdapter.add(teams); teamsView.setAdapter(fastAdapter);
 
