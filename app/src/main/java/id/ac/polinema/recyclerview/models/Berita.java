@@ -2,12 +2,12 @@ package id.ac.polinema.recyclerview.models;
 
 public class Berita {
     public String judul;
-    public String kategori;
+    public String company;
     public String image;
 
-    public Berita(String judul, String kategori, String image) {
+    public Berita(String judul, String company, String image) {
         this.judul = judul;
-        this.kategori = kategori;
+        this.company = company;
         this.image = image;
     }
 
@@ -19,12 +19,12 @@ public class Berita {
         this.judul = judul;
     }
 
-    public String getKategori() {
-        return kategori;
+    public String getCompany() {
+        return company;
     }
 
-    public void setKategori(String kategori) {
-        this.kategori = kategori;
+    public void setCompany(String company) {
+        this.company = company;
     }
 
     public String getImage() {
